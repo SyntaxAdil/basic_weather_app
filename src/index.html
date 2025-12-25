@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dekho</title>
+    <!-- fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body class="h-screen w-full bg-[url(./assets/bg.jpg)] bg-cover bg-no-repeat flex items-center justify-center">
+    <!-- weather section -->
+    <section class="rounded-lg min-w-100 p-6 bg-black/60 text-white text-center">
+        <h1 class="text-center text-2xl mb-4">Weather Dekho</h1>
+        <div class="relative">
+            <input type="text" id="cityIn" class="w-full py-1 px-4 rounded-2xl border border-gray-400 outline-0" autocomplete="off" spellcheck="false">
+            <button class="absolute top-1 right-3 cursor-pointer " id="submitBtn"><i class="fas fa-search text-gray-400"></i></button>
+            <p class="mt-2 text-red-400 hidden mssg">City is not exists</p>
+        </div>
+
+        <div id="result" class="my-6 hidden">
+            <h6 class="text-lg font-semibold capitalize border border-white/50 inline px-6 py-2 rounded-full text-white/80" id="cityDisplay">City Name</h6>
+            <h1 class="text-6xl font-bold py-2" id="tempDisplay">26ºC</h1>
+            <h3 class="text-lg text-white/40 capitalize " id="conditionDisplay">Broken Clouds</h3>
+        </div>
+
+    </section>
+
+
+
+    <!-- js -->
+    <script src="app.js"></script>
+</body>
+</html>
